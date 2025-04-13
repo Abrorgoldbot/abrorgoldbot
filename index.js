@@ -1,5 +1,6 @@
 async function sendSignalToTelegram(signal) {
-  if (!signal) return;
+  ...
+}
 
   const message = `
 📢 *AbrorGold Signal*
