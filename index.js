@@ -1,4 +1,23 @@
-const express = require('express');
+async function sendSignalToTelegram(signal) {
+  if (!signal) return;
+
+  const message = `
+📢 *AbrorGold Signal*
+*Direction:* ${signal.signal}
+*Entry:* ${signal.entry}
+*SL:* ${signal.sl}
+*TP:* ${signal.tp}
+*Timeframe:* ${signal.timeframe}
+*Confidence:* ${signal.confidence}
+  `;
+
+  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+  await axios.post(url, {
+    chat_id: CHAT_ID,
+    text: message,
+    parse_mode: 'Markdown'
+  });
+}const express = require('express');
 const axios = require('axios');
 
 const app = express();
