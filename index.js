@@ -10,7 +10,7 @@ const SYMBOL = 'XAU/USD';
 const INTERVAL = '15min';
 
 // Telegram bot sozlamalari
-const TELEGRAM_BOT_TOKEN = '7976973953:AAHUcmF8HE3sAXXH1gmknJ7AVaDt0D84w4';
+const TELEGRAM_BOT_TOKEN = '7976973953:AAG-FOG9p96-lr9D8XrSKkF7JYJVmDUlrGA';
 const CHAT_ID = '7976973953';
 
 // Signal generatsiya qilish
